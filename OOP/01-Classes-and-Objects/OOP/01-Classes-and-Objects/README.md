@@ -1,3 +1,58 @@
+1. Employee Class
+
+File: employee_class.cpp
+
+Concepts Practiced
+
+Classes and objects
+
+Private data members
+
+Parameterized constructor
+
+Member initializer list
+
+Public member functions
+
+What I Learned
+
+A class groups data and functions together.
+
+Private members cannot be accessed directly from outside the class.
+
+A constructor initializes an object when it is created.
+
+Code:
+#include<iostream>
+#include<string>
+using namespace std;
+
+class Employee {
+private:
+    string name;
+    int id;
+public:
+    Employee(string n, int i) : name(n), id(i) {}
+
+    void display()const {
+        cout << "Employee Name: " << name  << "\n" << "ID: " << id << "\n";
+    }
+};
+int main() {
+    Employee emp1("John Doe", 101);
+    Employee emp2("Jane Smith", 102);
+
+    emp1.display();
+    emp2.display();
+
+    return 0;
+}
+
+
+
+
+
+
 # Rectangle Class
 
 ## Concepts Practiced
